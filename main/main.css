@@ -1,0 +1,38 @@
+
+
+body { font-family: Arial, sans-serif; 
+    max-width: 600px; margin: auto; 
+    padding: 20px; 
+    }
+
+    .tab { cursor: pointer; padding: 10px; 
+        display: inline-block; 
+        border: 1px solid #ddd; 
+    }
+
+
+    .active { background-color: #007bff; 
+        color: white; 
+    }    
+
+    .card { border: 1px solid #ddd; 
+        padding: 10px;
+        margin-bottom: 10px; 
+        border-radius: 5px; 
+    }
+
+    .input-field, .textarea-field { width: 100%; 
+        padding: 8px; 
+        margin: 5px 0; 
+    }
+
+    .button { background-color: #007bff; 
+        color: white; 
+        border: none; 
+        padding: 10px; 
+        cursor: pointer; 
+    }
+
+    .hidden {
+        display: none; 
+    }
