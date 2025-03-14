@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 공유 사이트</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>레시피 공유 사이트</h1>
+        <div id="auth-buttons">
+            <button id="login-btn">로그인</button>
+            <button id="signup-btn">회원가입</button>
+        </div>
+    </header>
+
+    <div id="main-content">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="레시피 검색...">
+            <button>검색</button>
+        </div>
+
+        <div class="category-container" id="category-container">
+            <div class="category-group">
+                <h2>종류별</h2>
+                <div class="category">
+                    <input type="checkbox" id="type-dessert">
+                    <label for="type-dessert">디저트</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="type-korean">
+                    <label for="type-korean">한식</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="type-western">
+                    <label for="type-western">양식</label>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h2>재료별</h2>
+                <div class="category">
+                    <input type="checkbox" id="ingredient-meat">
+                    <label for="ingredient-meat">고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="ingredient-vegetables">
+                    <label for="ingredient-vegetables">채소</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="ingredient-fruits">
+                    <label for="ingredient-fruits">과일</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로그인 폼 -->
+    <form id="login-form" style="display:none;">
+        <button type="button" id="back-btn">뒤로 가기</button>
+        <h2>로그인</h2>
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호">
+        <button type="submit">로그인</button>
+    </form>
+
+    <!-- 회원가입 폼 -->
+    <form id="signup-form" style="display:none;">
+        <button type="button" id="back-btn">뒤로 가기</button>
+        <h2>회원가입</h2>
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호">
+        <input type="password" placeholder="비밀번호 확인">
+        <button type="submit">회원가입</button>
+    </form>
+
+    <!-- JS 파일 연결 -->
+    <script src="index.js"></script>
+</body>
+</html>
