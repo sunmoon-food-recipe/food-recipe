@@ -4,6 +4,19 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #fff7e6; /* index 페이지와 동일한 배경 색상 */
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #ffcc99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 /* 검색창 스타일 */
@@ -36,16 +49,34 @@ button:hover {
 }
 
 /* 검색 결과 스타일 */
-#recipe-results {
+#search-results {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .recipe-item {
     background-color: #f9f9f9;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    width: 200px; /* 각 레시피 항목의 너비 */
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
 }
 
 /* 메인 화면 스타일 (초기 표시용) */

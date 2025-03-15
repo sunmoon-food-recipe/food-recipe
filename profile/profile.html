@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 페이지</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1>내 페이지</h1>
+    </header>
+
+    <div id="profile-content">
+        <h2>환영합니다, <span id="username"></span>님!</h2>
+        <p>여기는 사용자의 개인 페이지입니다. 여기에서 개인 정보를 확인하고 수정할 수 있습니다.</p>
+
+        <div id="user-info">
+            <h3>사용자 정보</h3>
+            <p><strong>아이디:</strong> <span id="user-id"></span></p>
+            <p><strong>이메일:</strong> <span id="user-email"></span></p>
+        </div>
+
+        <button id="edit-btn">정보 수정</button>
+        <button id="logout-btn">로그아웃</button>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

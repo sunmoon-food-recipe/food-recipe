@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레시피 공유 사이트</title>
     <!-- CSS 파일 연결 -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="index.css">
+=======
+    <link rel="stylesheet" href="styles.css">
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 </head>
 <body>
     <header>
@@ -13,19 +17,91 @@
         <div id="auth-buttons">
             <button id="login-btn">로그인</button>
             <button id="signup-btn">회원가입</button>
+<<<<<<< HEAD
+            <button id="logout-btn" style="display:none;">로그아웃</button> <!-- 로그아웃 버튼 -->
+=======
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
         </div>
     </header>
 
     <div id="main-content">
         <div id="search-container">
             <input type="text" id="search-input" placeholder="레시피 검색...">
+<<<<<<< HEAD
             <button id="search-btn">검색</button>
+=======
+            <button>검색</button>
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
         </div>
 
         <div class="category-container" id="category-container">
             <div class="category-group">
                 <h2>종류별</h2>
                 <div class="category">
+<<<<<<< HEAD
+                    <input type="checkbox" id="SideDish">
+                    <label for="SideDish">밑반찬</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="MainDish">
+                    <label for="MainDish">메인반찬</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="SoupStew">
+                    <label for="SoupStew">국/탕</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Stew">
+                    <label for="Stew">찌게</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Dessert">
+                    <label for="Dessert">디저트</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="NoodlesDumplings">
+                    <label for="NoodlesDumplings">면/만두</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="RicePorridgeRiceCake">
+                    <label for="RicePorridgeRiceCake">밥/죽/떡</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="KimchiPicklesSauces">
+                    <label for="KimchiPicklesSauces">김치/젖갈/장</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="SeasoningSauceJam">
+                    <label for="SeasoningSauceJam">양념/소스/잼</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="WesternFood">
+                    <label for="WesternFood">양식</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Salad">
+                    <label for="Salad">샐러드</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Soup">
+                    <label for="Soup">스프</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Bread">
+                    <label for="Bread">빵</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Snacks">
+                    <label for="Snacks">과자</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="TeaDrinksAlcohol">
+                    <label for="TeaDrinksAlcohol">차/음료/술</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Others">
+                    <label for="Others">기타</label>
+=======
                     <input type="checkbox" id="type-dessert">
                     <label for="type-dessert">디저트</label>
                 </div>
@@ -36,12 +112,77 @@
                 <div class="category">
                     <input type="checkbox" id="type-western">
                     <label for="type-western">양식</label>
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
                 </div>
             </div>
 
             <div class="category-group">
                 <h2>재료별</h2>
                 <div class="category">
+<<<<<<< HEAD
+                    <input type="checkbox" id="Beef">
+                    <label for="Beef">소고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Pork">
+                    <label for="Pork">돼지고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Chicken">
+                    <label for="Chicken">닭고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Meat">
+                    <label for="Meat">육류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Vegetables">
+                    <label for="Vegetables">채소류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Seafood">
+                    <label for="Seafood">해물류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="EggsDairyProducts">
+                    <label for="EggsDairyProducts">달걀/유제품</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="ProcessedFoods">
+                    <label for="ProcessedFoods">가공식품</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Rice">
+                    <label for="Rice">쌀</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Flour">
+                    <label for="Flour">밀가루</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="DriedSeafood">
+                    <label for="DriedSeafood">건어물류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Mushrooms">
+                    <label for="Mushrooms">버섯류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Fruits">
+                    <label for="Fruits">과일류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="LegumesNuts">
+                    <label for="LegumesNuts">콩/견과류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Grains">
+                    <label for="Grains">곡류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Others">
+                    <label for="Others">기타</label>
+=======
                     <input type="checkbox" id="ingredient-meat">
                     <label for="ingredient-meat">고기</label>
                 </div>
@@ -52,11 +193,57 @@
                 <div class="category">
                     <input type="checkbox" id="ingredient-fruits">
                     <label for="ingredient-fruits">과일</label>
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
                 </div>
             </div>
         </div>
     </div>
 
+<<<<<<< HEAD
+    <!-- JS 파일 연결 -->
+    <script src="index.js"></script>
+
+    <script>
+        window.onload = function() {
+            // 로그인 상태 확인
+            if (localStorage.getItem('loggedIn') === 'true') {
+                document.getElementById('login-btn').style.display = 'none';
+                document.getElementById('signup-btn').style.display = 'none';
+                document.getElementById('logout-btn').style.display = 'inline-block';
+            } else {
+                document.getElementById('login-btn').style.display = 'inline-block';
+                document.getElementById('signup-btn').style.display = 'inline-block';
+                document.getElementById('logout-btn').style.display = 'none';
+            }
+
+            // 로그인 버튼 클릭 시 login.html로 이동
+            document.getElementById('login-btn').addEventListener('click', function() {
+                window.location.href = 'login/login.html';  // login.html로 이동 (로그인 페이지)
+            });
+
+            // 회원가입 버튼 클릭 시 create_account.html로 이동
+            document.getElementById('signup-btn').addEventListener('click', function() {
+                window.location.href = 'create_account/create_account.html';  // 회원가입 페이지
+            });
+
+            // 로그아웃 버튼 클릭 시
+            document.getElementById('logout-btn').addEventListener('click', function() {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('username');
+                window.location.reload();  // 페이지 새로고침
+            });
+
+            // 검색 버튼 클릭 시
+            document.getElementById('search-btn').addEventListener('click', function() {
+                var searchQuery = document.getElementById('search-input').value;
+                if (searchQuery) {
+                    // search.html로 검색어를 파라미터로 전달
+                    window.location.href = 'search/search.html?query=' + encodeURIComponent(searchQuery);  // 검색 페이지로 이동
+                }
+            });
+        };
+    </script>
+=======
     <!-- 로그인 폼 -->
     <form id="login-form" style="display:none;">
         <button type="button" id="back-btn">뒤로 가기</button>
@@ -78,15 +265,6 @@
 
     <!-- JS 파일 연결 -->
     <script src="index.js"></script>
-
-    <script>
-        document.getElementById('search-btn').addEventListener('click', function() {
-            var searchQuery = document.getElementById('search-input').value;
-            if (searchQuery) {
-                // search.html로 검색어를 파라미터로 전달
-                window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
-            }
-        });
-    </script>
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 </body>
 </html>

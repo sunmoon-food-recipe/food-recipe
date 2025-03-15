@@ -1,3 +1,48 @@
+<<<<<<< HEAD
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff7e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #ffcc99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 입력 필드 감싸는 컨테이너 */
+.input-container {
+    position: relative;
+    width: 150%;  /* 150% 유지 */
+    max-width: 600px;  /* 너무 커지는 걸 방지 */
+    left: 50%;
+    transform: translateX(-50%); /* 정확히 중앙 정렬 */
+}
+
+/* 입력 필드 스타일 */
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+=======
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -28,11 +73,53 @@ form {
 label {
     display: block;
     margin: 10px 0 5px;
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }
 
 input {
     width: 100%;
+<<<<<<< HEAD
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+/* 버튼 스타일 */
+button {
+    width: 100%; /* 버튼 가로 크기를 100%로 맞추기 */
+    padding: 18px;  /* 버튼 높이 증가 */
+    font-size: 20px;  /* 글자 크기 증가 */
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    background-color: #A3B46D;
+    color: white;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #8F9B60;
+}
+
+/* 링크 스타일 */
+.links {
+    margin-top: 20px;
+}
+
+.link {
+    font-size: 16px;
+    color: #A3B46D;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+=======
     padding: 8px;
     margin-bottom: 20px;
     font-size: 16px;
+>>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }

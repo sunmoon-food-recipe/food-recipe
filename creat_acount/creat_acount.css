@@ -1,38 +1,71 @@
+/* 기본 스타일 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-color: #fff7e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+/* 헤더 스타일 */
 header {
-    background-color: #ffeb3b;
+    background-color: #ffcc99;
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
+/* 입력 필드 감싸는 컨테이너 */
+.input-container {
+    position: relative;
+    width: 150%;  /* 150% 유지 */
+    max-width: 600px;  /* 너무 커지는 걸 방지 */
+    left: 50%;
+    transform: translateX(-50%); /* 정확히 중앙 정렬 */
 }
 
-form {
-    width: 300px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
+/* 입력 필드 스타일 */
 label {
     display: block;
-    margin: 10px 0 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 input {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+/* 회원가입 버튼 스타일 (입력창과 크기 동일하게 조정) */
+button {
+    width: 100%; /* 입력창과 동일하게 100% 크기 */
+    padding: 15px; /* 입력창과 동일한 높이 */
+    font-size: 18px; /* 입력창과 동일한 글자 크기 */
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    background-color: #A3B46D;
+    color: white;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #8F9B60;
 }

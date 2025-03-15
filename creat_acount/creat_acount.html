@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <!-- CSS 파일 연결 -->
     <link rel="stylesheet" href="creat_acount.css">
 </head>
 <body>
@@ -12,16 +11,17 @@
         <h1>회원가입 페이지</h1>
     </header>
 
-    <form id="signup-form">
-        <button type="button" id="back-btn">뒤로 가기</button>
-        <h2>회원가입</h2>
-        <input type="text" placeholder="아이디">
-        <input type="password" placeholder="비밀번호">
-        <input type="password" placeholder="비밀번호 확인">
-        <button type="submit">회원가입</button>
-    </form>
+    <div id="signup-form">
+        <input type="text" id="username" placeholder="아이디">
+        <input type="password" id="password" placeholder="비밀번호">
+        <button id="signup-btn">회원가입</button>
+    </div>
 
-    <!-- JS 파일 연결 -->
-    <script src="create_account.js"></script>
+    <footer>
+        <a href="../index/index.html">홈으로</a> <!-- 홈으로 이동 -->
+        <a href="login.html">로그인</a> <!-- 로그인 페이지로 이동 -->
+    </footer>
+
+    <script src="creat_acount.js"></script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;  /* index 페이지와 동일한 배경 색상 */
+}
+
+header {
+    background-color: #ffcc99;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#profile-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profile-content h2 {
+    color: #333;
+}
+
+#user-info {
+    margin: 20px 0;
+}
+
+#user-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#edit-btn {
+    background-color: #ffa500;
+}
+
+#edit-btn:hover {
+    background-color: #e68900;
+}
+
+#logout-btn {
+    background-color: #f44336;
+}
+
+#logout-btn:hover {
+    background-color: #e53935;
+}
