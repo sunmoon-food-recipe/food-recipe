@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* 기본 스타일 */
 body {
     font-family: Arial, sans-serif;
@@ -42,49 +41,6 @@ label {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: left;
-=======
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #ffeb3b;
-    text-align: center;
-    padding: 20px;
-}
-
-button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-form {
-    width: 300px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
-}
-
-input {
-    width: 100%;
-<<<<<<< HEAD
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    display: block;
-    margin-bottom: 18px;
 }
 
 /* 버튼 스타일 */
@@ -104,6 +60,26 @@ button:hover {
     background-color: #8F9B60;
 }
 
+/* 폼 스타일 */
+form {
+    width: 300px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* input 스타일 */
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    display: block;
+    margin-bottom: 18px;
+}
+
 /* 링크 스타일 */
 .links {
     margin-top: 20px;
@@ -117,9 +93,9 @@ button:hover {
 
 .link:hover {
     text-decoration: underline;
-=======
-    padding: 8px;
-    margin-bottom: 20px;
-    font-size: 16px;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
+}
+
+/* 추가적인 스타일 */
+body {
+    background-color: #f2f2f2;
 }

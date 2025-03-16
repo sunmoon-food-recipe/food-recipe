@@ -3,49 +3,39 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     height: 100vh;
-    background-color: #fff7e6;
-=======
-    height: 100vh; /* 화면 높이를 100%로 설정 */
+    background-color: #fff7e6; /* 바디의 배경색을 연한 베이지색으로 설정 */
     display: flex;
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center; /* 세로 중앙 정렬 */
+    flex-direction: column; /* 세로로 배치 */
+    justify-content: flex-start; /* 세로 방향으로 시작 */
+    align-items: center; /* 가로 중앙 정렬 */
     text-align: center; /* 텍스트 중앙 정렬 */
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }
 
 /* header 스타일 */
 header {
-<<<<<<< HEAD
-    background-color: #ffcc99;
+    background-color: #ffcc99; /* 헤더 배경색을 연한 오렌지색으로 설정 */
     color: white;
     padding: 20px;
-    text-align: center;
-    width: 100%;
     font-size: 24px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px; /* 헤더 아래 여백 추가 */
-=======
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
     width: 100%;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* 헤더 아래 여백 추가 */
 }
 
+/* h1 스타일 */
 h1 {
     margin: 0;
 }
 
-<<<<<<< HEAD
 /* 로그인, 회원가입 버튼 */
 #auth-buttons {
     position: fixed;  /* 페이지 스크롤 시에도 고정 */
-    top: 20px;
-    right: 20px;
-    z-index: 10;
+    top: 20px;        /* 상단에서 20px 만큼 떨어짐 */
+    right: 20px;      /* 오른쪽에서 20px 만큼 떨어짐 */
+    z-index: 10;      /* 다른 요소들보다 위에 위치하도록 설정 */
 }
 
 /* 검색창을 헤더 바로 아래 배치 */
@@ -57,25 +47,6 @@ h1 {
 }
 
 /* 검색창 스타일 */
-=======
-/* 메인 컨텐츠 스타일 */
-#main-content {
-    display: flex;
-    flex-direction: column; /* 세로 방향으로 배치 */
-    align-items: center; /* 가로 중앙 정렬 */
-    justify-content: center; /* 세로 중앙 정렬 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    margin-top: 20px; /* 위쪽 여백 */
-}
-
-/* 검색창 스타일 */
-#search-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 #search-input {
     width: 60%;
     padding: 15px;
@@ -84,23 +55,19 @@ h1 {
     border: 1px solid #ccc;
 }
 
+/* 버튼 스타일 */
 button {
     padding: 15px;
     font-size: 18px;
     border-radius: 5px;
     border: 1px solid #ccc;
-<<<<<<< HEAD
-    background-color: #A3B46D;
-=======
     background-color: #4CAF50;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-<<<<<<< HEAD
-    background-color:  #8F9B60;
+    background-color: #8F9B60;
 }
 
 /* 메인 컨텐츠 스타일 */
@@ -113,45 +80,31 @@ button:hover {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-=======
-    background-color: #45a049;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }
 
 /* 카테고리 스타일 */
 .category-container {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     margin: 20px 0;
     width: 80%;
     box-sizing: border-box;
-=======
-    margin: 20px;
-    width: 80%; /* 카테고리 너비 조정 */
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }
 
 .category-group {
     display: flex;
     flex-direction: column;
     width: 45%;
-<<<<<<< HEAD
-    background-color: white; /* 하얀색 배경 */
+    background-color: white;
     padding: 15px;
-    border-radius: 10px; /* 둥근 모서리 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
-=======
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-group h2 {
     margin-bottom: 10px;
-<<<<<<< HEAD
     font-size: 18px;
     font-weight: bold;
-=======
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 }
 
 .category {
@@ -160,7 +113,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 input[type="checkbox"] {
     margin-right: 10px;
 }
@@ -181,35 +133,35 @@ input[type="checkbox"] {
         width: 80%;
         margin-bottom: 20px;
     }
-=======
-/* 버튼 스타일 */
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #45a049;
-}
+    /* 버튼 스타일 */
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 
-/* 폼 스타일 */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
+    button:hover {
+        background-color: #45a049;
+    }
 
-form input {
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 200px;
-}
+    /* 폼 스타일 */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
 
-form button {
-    padding: 10px 20px;
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
+    form input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 200px;
+    }
+
+    form button {
+        padding: 10px 20px;
+    }
 }

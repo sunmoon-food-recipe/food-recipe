@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// 로그인 폼 제출 처리
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault(); // 폼 제출 기본 동작을 막습니다.
 
@@ -20,7 +20,9 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 // 뒤로 가기 버튼 클릭 시 이전 페이지로 돌아가기
 document.getElementById('back-btn').addEventListener('click', function() {
     window.history.back();
-=======
+});
+
+// DOMContentLoaded 이벤트 핸들러
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
 
@@ -33,5 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // 로그인 요청 (예시)
         alert(`아이디: ${username}, 비밀번호: ${password}`);
     });
->>>>>>> 12294450df38993a80d7230ccd110cb46de7c71f
 });
