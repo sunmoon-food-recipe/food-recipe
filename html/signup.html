@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>회원가입</title>
+  <title>우리의 레시피 회원가입</title>
+  <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
   <h1>회원가입</h1>
@@ -15,8 +16,13 @@
     <br>
     <button type="submit">회원가입</button>
   </form>
+
   <div id="message"></div>
+
+  <!-- 로그인 페이지 이동 버튼 (초기에는 숨김 처리) -->
+  <button id="loginButton" style="display: none;" onclick="location.href='login.html'">로그인 페이지로 이동</button>
+
   <!-- JS 파일 로드 -->
-  <script type="module" src="js/sign.js"></script>
+  <script type="module" src="js/signup.js"></script>
 </body>
 </html>

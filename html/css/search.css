@@ -1,59 +1,65 @@
-/* 기본 스타일 */
+/* 전체 페이지 스타일 */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* 검색창 스타일 */
-#search-container {
+/* 헤더 스타일 */
+header {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 🔹 검색 결과를 바둑판(grid) 형태로 정렬 */
+#recipe-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-}
-
-#search-input {
-    width: 60%;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* 검색 결과 스타일 */
-#recipe-results {
     margin-top: 20px;
 }
 
+#recipe-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 🔹 자동 정렬 */
+    gap: 15px;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+/* 🔹 개별 레시피 카드 */
 .recipe-item {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    cursor: pointer;
 }
 
-/* 메인 화면 스타일 (초기 표시용) */
-#main-content {
-    display: block;
+/* 🔹 카드 호버 효과 */
+.recipe-item:hover {
+    transform: scale(1.05);
 }
 
-/* 메인 화면 숨기기 */
-#main-content.hidden {
-    display: none;
+/* 🔹 레시피 이미지 */
+.recipe-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* 비율 유지하면서 크기 조정 */
+    border-radius: 10px;
+}
+
+/* 🔹 레시피 제목 */
+.recipe-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
