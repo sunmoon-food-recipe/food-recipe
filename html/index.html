@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 공유 사이트</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>레시피 공유 사이트</h1>
+        <div id="auth-buttons">
+            <button id="login-btn">로그인</button>
+            <button id="signup-btn">회원가입</button>
+            <button id="logout-btn" style="display:none;">로그아웃</button> <!-- 로그아웃 버튼 -->
+        </div>
+    </header>
+
+    <div id="main-content">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="레시피 검색...">
+            <button id="search-btn">검색</button>
+        </div>
+
+        <div class="category-container" id="category-container">
+            <div class="category-group">
+                <h2>종류별</h2>
+                <div class="category">
+                    <input type="checkbox" id="SideDish">
+                    <label for="SideDish">밑반찬</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="MainDish">
+                    <label for="MainDish">메인반찬</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="SoupStew">
+                    <label for="SoupStew">국/탕</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Stew">
+                    <label for="Stew">찌게</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Dessert">
+                    <label for="Dessert">디저트</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="NoodlesDumplings">
+                    <label for="NoodlesDumplings">면/만두</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="RicePorridgeRiceCake">
+                    <label for="RicePorridgeRiceCake">밥/죽/떡</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="KimchiPicklesSauces">
+                    <label for="KimchiPicklesSauces">김치/젖갈/장</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="SeasoningSauceJam">
+                    <label for="SeasoningSauceJam">양념/소스/잼</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="WesternFood">
+                    <label for="WesternFood">양식</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Salad">
+                    <label for="Salad">샐러드</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Soup">
+                    <label for="Soup">스프</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Bread">
+                    <label for="Bread">빵</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Snacks">
+                    <label for="Snacks">과자</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="TeaDrinksAlcohol">
+                    <label for="TeaDrinksAlcohol">차/음료/술</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Others">
+                    <label for="Others">기타</label>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h2>재료별</h2>
+                <div class="category">
+                    <input type="checkbox" id="Beef">
+                    <label for="Beef">소고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Pork">
+                    <label for="Pork">돼지고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Chicken">
+                    <label for="Chicken">닭고기</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Meat">
+                    <label for="Meat">육류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Vegetables">
+                    <label for="Vegetables">채소류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Seafood">
+                    <label for="Seafood">해물류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="EggsDairyProducts">
+                    <label for="EggsDairyProducts">달걀/유제품</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="ProcessedFoods">
+                    <label for="ProcessedFoods">가공식품</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Rice">
+                    <label for="Rice">쌀</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Flour">
+                    <label for="Flour">밀가루</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="DriedSeafood">
+                    <label for="DriedSeafood">건어물류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Mushrooms">
+                    <label for="Mushrooms">버섯류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Fruits">
+                    <label for="Fruits">과일류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="LegumesNuts">
+                    <label for="LegumesNuts">콩/견과류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Grains">
+                    <label for="Grains">곡류</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" id="Others">
+                    <label for="Others">기타</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS 파일 연결 -->
+    <script type= "module" src= "js/index.js"></script>
+
+    <!-- 로그인 폼 -->
+    <form id="login-form" style="display:none;">
+        <button type="button" id="back-btn">뒤로 가기</button>
+        <h2>로그인</h2>
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호">
+        <button type="submit">로그인</button>
+    </form>
+
+    <!-- 회원가입 폼 -->
+    <form id="signup-form" style="display:none;">
+        <button type="button" id="back-btn">뒤로 가기</button>
+        <h2>회원가입</h2>
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호">
+        <input type="password" placeholder="비밀번호 확인">
+        <button type="submit">회원가입</button>
+    </form>
+
+</body>
+</html>
